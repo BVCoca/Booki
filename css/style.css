@@ -1,102 +1,116 @@
-*
-{
+* {
     font-family: Raleway, serif;
 }
 
-body
-{
+body {
     max-width: 1920px;
     min-width: 500px;
 }
 
-#page
-{
+#page {
     width: 95%;
     margin: auto;
 }
 
-#logo
-{
+#logo {
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-#logo img
-{
+#logo img {
     width: 120px;
     height: 70px;
     object-fit: cover;
 }
 
-.fa-star
-{
+.fa-star {
     color: #0065FC;
 }
 
-.etoiletransparence
-{
+.etoiletransparence {
     color: #cfcfcf;
 }
 
-header
-{
+header {
     display: flex;
     justify-content: space-between;
 }
 
-nav
-{
+nav {
     margin-top: 26px;
 }
 
-nav a
-{
+nav a {
     padding-right: 30px;
     padding-left: 30px;
 }
 
-nav a:hover
-{
+nav a:hover {
     color: #0065FC;
     border-top: 4px solid #0065FC;
     padding-top: 23px;
 }
 
-p
+#positionRecherche
 {
-    font-size: medium;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-h2
-{
-    font-size: medium;
+#divBoutonTheme {
+    display: flex;
+    justify-content: flex-end;
 }
 
-h1
-{
-    font-size: larger;
+.themeSombre {
+    background-color: rgb(59, 59, 59);
+    color: white;
 }
 
-span
-{
+#boutonTheme {
+    color: white;
+    background-color: #0065FC;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: #0065FC;
+    border-style: solid;
     font-weight: bold;
 }
 
-a
-{
+#boutonTheme:hover {
+    background-color: #458efc;
+    border-color: #458efc;
+}
+
+p {
+    font-size: medium;
+}
+
+h2 {
+    font-size: medium;
+}
+
+h1 {
+    font-size: larger;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
 
-input
-{  
+input {
     font-weight: bold;
 }
 
-#boutonrecherche
-{
+#boutonrecherche {
     color: white;
     background-color: #0065FC;
     padding: 8px;
@@ -107,19 +121,16 @@ input
     font-weight: bold;
 }
 
-#loupe
-{
+#loupe {
     display: none;
 }
 
-#boutonrecherche:hover
-{
+#boutonrecherche:hover {
     background-color: #458efc;
     border-color: #458efc;
 }
 
-#rechercher input
-{
+#rechercher input {
     padding: 8px;
     margin-right: -5px;
     margin-left: -4px;
@@ -128,28 +139,24 @@ input
     outline: #F2F2F2;
 }
 
-#rechercher label
-{
+#rechercher label {
     padding: 9px 9px 11px 9px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-#filtres
-{
+#filtres {
     display: flex;
     margin-top: 20px;
 }
 
-#filtres p
-{
-    margin-top: 20px; 
+#filtres p {
+    margin-top: 20px;
     margin-right: 20px;
 }
 
-#filtres button
-{
+#filtres button {
     padding: 8px;
     background-color: white;
     border-radius: 20px;
@@ -160,14 +167,12 @@ input
     margin: 11px;
 }
 
-#filtres button:hover
-{
+#filtres button:hover {
     background-color: #F2F2F2;
     border-color: #F2F2F2;
 }
 
-.fa-info
-{
+.fa-info {
     border-color: #F2F2F2;
     border-style: solid;
     border-radius: 100%;
@@ -177,8 +182,7 @@ input
     padding: 5px 12px 5px 12px;
 }
 
-.iconefiltre
-{
+.iconefiltre {
     background-color: #DEEBFF;
     border-radius: 30px;
     padding: 11px;
@@ -188,33 +192,28 @@ input
     color: #0065FC;
 }
 
-#info
-{
+#info {
     display: flex;
     flex-wrap: wrap;
 }
 
-#bloc-page
-{
-    display:flex;
+#bloc-page {
+    display: flex;
     flex-wrap: wrap;
 }
 
-#responsive1
-{
+#responsive1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#bloc-page h2
-{
+#bloc-page h2 {
     font-size: larger;
     font-weight: bold;
 }
 
-#hebergement
-{
+#hebergement {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 59%;
@@ -222,16 +221,14 @@ input
     margin-bottom: 60px;
 }
 
-#positioncarteH
-{
+#positioncarteH {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
 
-#hebergement img
-{
+#hebergement img {
     width: 100%;
     height: 150px;
     border-top-left-radius: 10px;
@@ -239,9 +236,8 @@ input
     object-fit: cover;
 }
 
-.cardH 
-{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.cardH {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 10px;
     border-radius: 20px;
@@ -250,28 +246,25 @@ input
     height: 85%;
 }
 
-#hebergement a
-{
+#hebergement a {
     width: 30%;
 }
 
-.cardH p, .cardH h3, .cardH i
-{
+.cardH p,
+.cardH h3,
+.cardH i {
     margin-left: 5px;
 }
 
-#bloc-page p
-{
+#bloc-page p {
     font-family: Raleway;
 }
 
-.cardH:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.cardH:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#populaire
-{
+#populaire {
     width: 32%;
     background-color: #F2F2F2;
     padding: 20px 15px 0px 15px;
@@ -279,39 +272,34 @@ input
     margin-bottom: 60px;
 }
 
-#titrepopulaire
-{
+#titrepopulaire {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#titrepopulaire h2
-{
+#titrepopulaire h2 {
     margin-right: 10px;
 }
 
-#positioncarteP
-{
+#positioncarteP {
     display: flex;
     flex-direction: column;
 }
 
-#populaire img
-{
+#populaire img {
     width: 45%;
     height: 180px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
     object-fit: cover;
 }
 
-.cardP 
-{
+.cardP {
     display: flex;
     flex-direction: row;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 10px;
     border-radius: 20px;
@@ -320,18 +308,16 @@ input
     background-color: white;
 }
 
-.cardP p, .cardP h3
-{
+.cardP p,
+.cardP h3 {
     margin: 0px;
 }
 
-.cardP:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.cardP:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.contenerP
-{
+.contenerP {
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -339,62 +325,29 @@ input
     margin-top: 10px;
 }
 
-.contenerP p
-{
+.contenerP p {
     margin-top: 10px;
-    height: 100% ;
+    height: 100%;
 }
 
-.etoiles
-{
+.etoiles {
     display: flex;
     align-items: center;
 }
 
-#activites
-{
+#activites {
     display: flex;
     margin-top: 20px;
 }
 
-#positioncarteA1
-{
+#positioncarteA1 {
     display: flex;
-    width: 20%; /* or 20% */
+    width: 20%;
+    /* or 20% */
     height: 500px;
 }
 
-#positioncarteA2
-{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 50px;
-    height: 500px;
-}
-
-#positioncarteA2 a
-{
-    height: 44%;
-    margin-bottom: 75px;
-}
-
-#positioncarteA4 a
-{
-    height: 44%;
-    margin-bottom: 75px;
-}
-
-#positioncarteA3
-{
-    display: flex;
-    width: 20%; /* or 20% */
-    margin-left: 50px;
-    height: 500px;
-}
-
-#positioncarteA4
-{
+#positioncarteA2 {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -402,9 +355,34 @@ input
     height: 500px;
 }
 
-.cardA1
-{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+#positioncarteA2 a {
+    height: 44%;
+    margin-bottom: 75px;
+}
+
+#positioncarteA4 a {
+    height: 44%;
+    margin-bottom: 75px;
+}
+
+#positioncarteA3 {
+    display: flex;
+    width: 20%;
+    /* or 20% */
+    margin-left: 50px;
+    height: 500px;
+}
+
+#positioncarteA4 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50px;
+    height: 500px;
+}
+
+.cardA1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
     background-color: white;
@@ -413,8 +391,7 @@ input
     padding-bottom: 15px;
 }
 
-.cardA1 img
-{
+.cardA1 img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
@@ -422,8 +399,7 @@ input
     object-fit: cover;
 }
 
-.cardA2 img
-{
+.cardA2 img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
@@ -431,15 +407,14 @@ input
     object-fit: cover;
 }
 
-.cardA1 h3, .cardA2 h3
-{
+.cardA1 h3,
+.cardA2 h3 {
     margin-top: 5px;
     padding-left: 15px;
 }
 
-.cardA2
-{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.cardA2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
     background-color: white;
@@ -449,13 +424,12 @@ input
     padding-bottom: 15px;
 }
 
-.cardA1:hover, .cardA2:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.cardA1:hover,
+.cardA2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-footer
-{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -463,59 +437,53 @@ footer
     margin-top: 60px;
 }
 
-#apropos
-{
+#apropos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-#noshebergements
-{
+#noshebergements {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-#assistance
-{
+#assistance {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-ul
-{
+ul {
     list-style: none;
     padding: 0px;
 }
 
-li
-{
+li {
     padding: 5px;
     font-family: Raleway;
 }
 
-@media screen and (max-width:992px) /* Version Tablette */
-{
-    #logo
+@media screen and (max-width:992px)
+
+/* Version Tablette */
     {
+    #logo {
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
-    #logo img
-    {
+    #logo img {
         width: 120px;
         height: 70px;
         object-fit: cover;
     }
 
-    header
-    {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -523,22 +491,19 @@ li
         margin-bottom: 20px;
     }
 
-    nav
-    {
+    nav {
         display: flex;
         width: 100%;
-        justify-content:center;
+        justify-content: center;
         text-align: center;
         margin-top: 10px;
     }
 
-    nav a
-    {
+    nav a {
         width: 50%;
     }
 
-    nav a:hover
-    {
+    nav a:hover {
         color: #0065FC;
         border-top: inherit;
         padding-top: inherit;
@@ -546,66 +511,57 @@ li
         padding-bottom: 10px;
     }
 
-    h1, h2
-    {
+    h1,
+    h2 {
         display: flex;
         flex-direction: column;
         padding: 10px;
-    
+
     }
-    
-    #bloc-page
-    {
+
+    #bloc-page {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #filtres
-    {
+    #filtres {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         padding: 10px;
     }
 
-    #filtres p
-    {
+    #filtres p {
         margin-left: 10px;
     }
 
-    #rechercher
-    {
+    #rechercher {
         display: flex;
         justify-content: center;
     }
 
-    #boutonrecherche
-    {
+    #boutonrecherche {
         display: none;
     }
 
-    .fa-magnifying-glass
-    {
+    .fa-magnifying-glass {
         display: inline;
     }
 
-    #rechercher input
-    {
+    #rechercher input {
         width: 60%;
         padding: 12px;
     }
 
-    #rechercher label
-    {
+    #rechercher label {
         width: 8%;
         text-align: center;
         padding: 12px;
     }
 
-    #loupe
-    {
-        display:inline;
+    #loupe {
+        display: inline;
         color: white;
         background-color: #0065FC;
         padding: 8px;
@@ -616,27 +572,23 @@ li
         width: 15%;
     }
 
-    #loupe:hover
-    {
+    #loupe:hover {
         background-color: #458efc;
         border-color: #458efc;
     }
 
-    #info
-    {
+    #info {
         display: flex;
         flex-wrap: nowrap;
     }
 
-    .fa-info
-    {
+    .fa-info {
         align-items: center;
         height: 20px;
     }
 
 
-    #hebergement
-    {
+    #hebergement {
         display: flex;
         flex-direction: column;
         width: 97%;
@@ -644,40 +596,33 @@ li
         border-radius: inherit;
     }
 
-    #hebergement p
-    {
+    #hebergement p {
         text-align: inherit;
     }
 
-    #hebergement img
-    {
+    #hebergement img {
         width: 100%;
     }
 
-    #hebergement a
-    {
+    #hebergement a {
         width: 50%;
     }
 
-    #positioncarteH
-    {
+    #positioncarteH {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .cardH
-    {
+    .cardH {
         width: 90%;
     }
-    
-    #responsive1
-    {
+
+    #responsive1 {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    #populaire
-    {
+    #populaire {
         display: flex;
         flex-direction: column;
         width: 97%;
@@ -686,141 +631,121 @@ li
         border-radius: inherit;
     }
 
-    #titrepopulaire
-    {
+    #titrepopulaire {
         padding: 15px;
     }
 
-    #titrepopulaire h2
-    {
+    #titrepopulaire h2 {
         margin: inherit;
     }
-    
-    #positioncarteP
-    {
+
+    #positioncarteP {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-    #populaire p
-    {
+    #populaire p {
         text-align: inherit;
     }
-    
-    #populaire a
-    {
+
+    #populaire a {
         width: 80%;
     }
 
-    #activites
-    {
+    #activites {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    #activitesM h2
-    {
+    #activitesM h2 {
         padding-left: 20px;
     }
 
-    #activites img
-    {
+    #activites img {
         height: 200px;
     }
 
-    #positioncarteA1
-    {
+    #positioncarteA1 {
         width: 100%;
         height: inherit;
     }
 
-    #positioncarteA1 a
-    {
+    #positioncarteA1 a {
         width: 100%;
         height: 270px;
         margin-bottom: 20px;
     }
 
-    #positioncarteA2
-    {
+    #positioncarteA2 {
         width: 100%;
         margin-left: inherit;
         height: inherit;
     }
 
-    #positioncarteA2 a
-    {
+    #positioncarteA2 a {
         width: 100%;
         height: 270px;
         margin: inherit;
         margin-bottom: 20px;
     }
 
-    #positioncarteA3
-    {
+    #positioncarteA3 {
         width: 100%;
         height: inherit;
         margin-left: inherit;
     }
 
-    #positioncarteA3 a
-    {
+    #positioncarteA3 a {
         width: 100%;
         height: 270px;
         margin-bottom: 20px;
     }
 
-    #positioncarteA4
-    {
+    #positioncarteA4 {
         width: 100%;
         height: inherit;
         margin-left: inherit;
     }
-    
-    #positioncarteA4 a
-    {
+
+    #positioncarteA4 a {
         width: 100%;
         height: 270px;
         margin: inherit;
         margin-bottom: 20px;
     }
 
-    .cardA1
-    {
+    .cardA1 {
         height: 250px;
     }
 
-    .cardA2
-    {
+    .cardA2 {
         height: 250px;
     }
 }
 
-@media screen and (max-width: 768px) /* Version Smartphone */
-{
-    #page
+@media screen and (max-width: 768px)
+
+/* Version Smartphone */
     {
+    #page {
         width: 100%;
     }
 
-    #logo
-    {
+    #logo {
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
-    #logo img
-    {
+    #logo img {
         width: 100px;
         height: 50px;
         object-fit: cover;
     }
 
-    header
-    {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -828,25 +753,22 @@ li
         margin-bottom: 20px;
     }
 
-    nav
-    {
+    nav {
         display: flex;
         width: 100%;
-        justify-content:center;
+        justify-content: center;
         text-align: center;
         margin-top: 10px;
     }
 
-    nav a
-    {
+    nav a {
         width: 50%;
         border-top: inherit;
-        padding-top: inherit;  
+        padding-top: inherit;
         padding-bottom: 10px;
     }
 
-    nav a:hover
-    {
+    nav a:hover {
         color: #0065FC;
         border-top: inherit;
         padding-top: inherit;
@@ -854,66 +776,57 @@ li
         padding-bottom: 10px;
     }
 
-    h1, h2
-    {
+    h1,
+    h2 {
         display: flex;
         flex-direction: column;
         padding: 10px;
-    
+
     }
-    
-    #bloc-page
-    {
+
+    #bloc-page {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #filtres
-    {
+    #filtres {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         padding: 10px;
     }
 
-    #filtres p
-    {
+    #filtres p {
         margin-left: 10px;
     }
 
-    #rechercher
-    {
+    #rechercher {
         display: flex;
         justify-content: center;
     }
 
-    #boutonrecherche
-    {
+    #boutonrecherche {
         display: none;
     }
 
-    .fa-magnifying-glass
-    {
+    .fa-magnifying-glass {
         display: inline;
     }
 
-    #rechercher input
-    {
+    #rechercher input {
         width: 60%;
         padding: 12px;
     }
 
-    #rechercher label
-    {
+    #rechercher label {
         width: 8%;
         text-align: center;
         padding: 12px;
     }
 
-    #loupe
-    {
-        display:inline;
+    #loupe {
+        display: inline;
         color: white;
         background-color: #0065FC;
         padding: 8px;
@@ -924,32 +837,27 @@ li
         width: 15%;
     }
 
-    #loupe:hover
-    {
+    #loupe:hover {
         background-color: #458efc;
         border-color: #458efc;
     }
 
-    #info
-    {
+    #info {
         display: flex;
         flex-wrap: nowrap;
     }
 
-    .fa-info
-    {
+    .fa-info {
         align-items: center;
         height: 20px;
     }
 
-    #responsive1
-    {
+    #responsive1 {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    #hebergement
-    {
+    #hebergement {
         display: flex;
         flex-direction: column;
         width: 97%;
@@ -957,35 +865,29 @@ li
         border-radius: inherit;
     }
 
-    #hebergement p
-    {
+    #hebergement p {
         text-align: inherit;
     }
 
-    #hebergement img
-    {
+    #hebergement img {
         width: 100%;
     }
 
-    #positioncarteH
-    {
+    #positioncarteH {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .cardH
-    {
+    .cardH {
         width: 95%;
     }
 
-    #hebergement a
-    {
+    #hebergement a {
         width: 80%;
     }
 
-    #populaire
-    {
+    #populaire {
         display: flex;
         flex-direction: column;
         width: 97%;
@@ -994,115 +896,97 @@ li
         border-radius: inherit;
     }
 
-    #titrepopulaire h2
-    {
+    #titrepopulaire h2 {
         margin: inherit;
     }
-    
-    #positioncarteP
-    {
+
+    #positioncarteP {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-    #populaire p
-    {
+    #populaire p {
         text-align: inherit;
     }
-    
-    #populaire a
-    {
+
+    #populaire a {
         width: 94%;
     }
 
-    #activites
-    {
+    #activites {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    #activitesM h2
-    {
+    #activitesM h2 {
         padding-left: 20px;
     }
 
-    #activites img
-    {
+    #activites img {
         height: 200px;
     }
 
-    #positioncarteA1
-    {
+    #positioncarteA1 {
         width: 100%;
         height: inherit;
     }
 
-    #positioncarteA1 a
-    {
+    #positioncarteA1 a {
         width: 100%;
         height: 270px;
         margin-bottom: 20px;
     }
 
-    #positioncarteA2
-    {
+    #positioncarteA2 {
         width: 100%;
         margin-left: inherit;
         height: inherit;
     }
 
-    #positioncarteA2 a
-    {
+    #positioncarteA2 a {
         width: 100%;
         height: 270px;
         margin: inherit;
         margin-bottom: 20px;
     }
 
-    #positioncarteA3
-    {
+    #positioncarteA3 {
         width: 100%;
         height: inherit;
         margin-left: inherit;
     }
 
-    #positioncarteA3 a
-    {
+    #positioncarteA3 a {
         width: 100%;
         height: 270px;
         margin-bottom: 20px;
     }
 
-    #positioncarteA4
-    {
+    #positioncarteA4 {
         width: 100%;
         height: inherit;
         margin-left: inherit;
     }
-    
-    #positioncarteA4 a
-    {
+
+    #positioncarteA4 a {
         width: 100%;
         height: 270px;
         margin: inherit;
         margin-bottom: 20px;
     }
 
-    .cardA1
-    {
+    .cardA1 {
         height: 250px;
     }
 
-    .cardA2
-    {
+    .cardA2 {
         height: 250px;
     }
 
-    footer
-    {
+    footer {
         display: flex;
         flex-direction: column;
         padding-left: 20px;

@@ -11,6 +11,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="javascript/index.js" defer></script>
    <title>Booki</title>
 </head>
 
@@ -28,26 +29,32 @@
                <a href="#activites">Activités</a>
             </nav>
          </header>
-
          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
          <h2>En plein centre ville ou en pleine nature</h2>
 
-         <div id="rechercher">
-            <!--Bloc pour la recherche sur le site-->
-            <label for="search-hebergement"><i class="fa-solid fa-location-dot"></i></label>
-            <input type="search" id="search-hebergement" name="s" placeholder="Marseille, France">
-            <button id="boutonrecherche">Rechercher</button>
-            <button id="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+         <div id="positionRecherche">
+            <div id="rechercher">
+               <!--Bloc pour la recherche sur le site-->
+               <label for="search-hebergement"><i class="fa-solid fa-location-dot"></i></label>
+               <input type="search" id="search-hebergement" name="s" placeholder="Marseille, France">
+               <button id="boutonrecherche">Rechercher</button>
+               <button id="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div id="divBoutonTheme">
+               <button onclick="switchTheme()" id="boutonTheme"><i class="fa-solid fa-lightbulb"></i></button>
+            </div>
          </div>
 
          <div id="filtres">
             <!--Boutons de filtres-->
             <p>Filtres</p>
             <div id="boutonfiltres">
-               <button><i class="fa-solid fa-money-bill-wave iconefiltre"></i> Économique</button>
-               <button><i class="fa-solid fa-child iconefiltre"></i> Familial</button>
-               <button><i class="fa-solid fa-heart iconefiltre"></i> Romantique</button>
-               <button><i class="fa-solid fa-dog iconefiltre"></i> Animaux autorisés</button>
+               <button class="borderColor"><i class="fa-solid fa-money-bill-wave iconefiltre"></i> Économique</button>
+               <button class="borderColor"><i class="fa-solid fa-child iconefiltre"></i> Familial</button>
+               <button class="borderColor"><i class="fa-solid fa-heart iconefiltre"></i> Romantique</button>
+               <button class="borderColor"><i class="fa-solid fa-dog iconefiltre"></i> Animaux autorisés</button>
             </div>
          </div>
          <div id="info">
@@ -250,7 +257,7 @@
          </section>
       </div>
    </div>
-   <footer>
+   <footer id="footer">
       <!--Bas de page-->
       <div id="apropos">
          <h3>A propos</h3>
