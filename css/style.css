@@ -83,6 +83,11 @@ nav a:hover {
 #boutonTheme:hover {
     background-color: #458efc;
     border-color: #458efc;
+    transition-duration: 0.7s;
+    background-size: 200%;
+    transform: scale(1.05);
+    background-image: linear-gradient( to left, #0065FC, #3887ff, #0065FC );
+    background-position: right;
 }
 
 p {
@@ -128,6 +133,11 @@ input {
 #boutonrecherche:hover {
     background-color: #458efc;
     border-color: #458efc;
+    transition-duration: 0.7s;
+    background-size: 200%;
+    transform: scale(1.05);
+    background-image: linear-gradient( to left, #0065FC, #3887ff, #0065FC );
+    background-position: right;
 }
 
 #rechercher input {
@@ -168,8 +178,15 @@ input {
 }
 
 #filtres button:hover {
-    background-color: #F2F2F2;
-    border-color: #F2F2F2;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
+    background-size: 200%;
+    background-image: linear-gradient(
+        to left,
+        rgb(255, 255, 255),
+        #DEEBFF,
+        #DEEBFF);
+    background-position: right;
 }
 
 .fa-info {
@@ -262,6 +279,8 @@ input {
 
 .cardH:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 
 #populaire {
@@ -315,6 +334,8 @@ input {
 
 .cardP:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 
 .contenerP {
@@ -343,7 +364,6 @@ input {
 #positioncarteA1 {
     display: flex;
     width: 20%;
-    /* or 20% */
     height: 500px;
 }
 
@@ -368,7 +388,6 @@ input {
 #positioncarteA3 {
     display: flex;
     width: 20%;
-    /* or 20% */
     margin-left: 50px;
     height: 500px;
 }
@@ -427,6 +446,8 @@ input {
 .cardA1:hover,
 .cardA2:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 
 footer {
